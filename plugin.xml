@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.asreader.dock.cdv" version="0.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AsReaderDockPlugin</name>
+    <js-module name="AsReaderDockPlugin" src="www/AsReaderDockPlugin.js">
+        <clobbers target="asreaderdock"/>
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="AsReaderDockPlugin">
+                <param name="ios-package" value="AsReaderDockPlugin" /></feature>
+        </config-file>
+        <source-file src="src/ios/AsReaderDockPlugin.mm" />
+
+        <!-- AsReaderDock SDK -->
+        <framework src="src/ios/AsReaderDockSDK.framework" custom="true" />
+        
+        <config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
+            <array>
+                <string>jp.co.asx.asreader.nfc</string>
+                <string>jp.co.asx.asreader.6dongle.rfid</string>
+                <string>jp.co.asx.asreader.6dongle.barcode</string>
+                <string>jp.co.asx.asreader.rfid</string>
+                <string>jp.co.asx.asreader.barcode</string>
+                <string>jp.co.asx.asreader.0230D</string>
+                <string>jp.co.asx.asreader.0240D</string>
+                <string>jp.co.asx.asreader.040D</string>
+            </array>
+        </config-file>
+
+    </platform>
+</plugin>

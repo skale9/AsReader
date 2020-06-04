@@ -1,0 +1,17 @@
+0.0.4
+————————————————————
+■ 共通
+· 下記Listenerの返却値をデータ型から文字列型に変換しました。
+   asreaderdock.setNfcDataReceivedListener(receivedNFCScanStringListener);
+· NFCのDelegateを指定しました。
+   self.m_DeviceCommon.delegateNFC    = self;
+
+0.0.3
+————————————————————
+■ 共通
+   コールバックメソッドにcallbackIDは空の状態かどうかの判断を追加しました。
+
+0.0.2
+————————————————————
+■ 以下のメソッドを追加：
+   setChargingControl: function(success, error, isOn);

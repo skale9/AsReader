@@ -1,0 +1,17 @@
+0.0.4
+————————————————————
+■ 共通：
+· 修改了下面Listener的返回值的类型
+   asreaderdock.setNfcDataReceivedListener(receivedNFCScanStringListener);
+· 指定了NFC的代理
+   self.m_DeviceCommon.delegateNFC    = self;
+
+0.0.3
+————————————————————
+■ 共通：
+   回调方法中添加判断callbackID是否为空的处理。
+
+0.0.2
+————————————————————
+■ 追加下面的内容:
+   setChargingControl: function(success, error, isOn);

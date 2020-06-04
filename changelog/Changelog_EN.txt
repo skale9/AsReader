@@ -1,0 +1,17 @@
+0.0.4
+————————————————————
+■ Common:
+· Modified the return value type of the following listener.
+   asreaderdock.setNfcDataReceivedListener(receivedNFCScanStringListener);
+· Specified the delegate of NFC
+   self.m_DeviceCommon.delegateNFC    = self;
+
+0.0.3
+————————————————————
+■ Common:
+   Add processing to the callback function to get whether the callbackID is empty.
+
+0.0.2
+————————————————————
+■ Add the following method:
+   setChargingControl: function(success, error, isOn);

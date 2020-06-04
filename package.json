@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-asreaderdock",
+  "version": "0.0.4",
+  "description": "Cordova AsReader Dock Plugin",
+  "cordova": {
+    "id": "cordova-plugin-asreaderdock",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://asx4.us/gitbucket/AsApps/cordova-plugin-asreaderdock"
+  },
+  "keywords": [
+    "cordova",
+    "asreaderdock",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Asterisk Inc."
+}
